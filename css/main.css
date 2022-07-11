@@ -383,6 +383,16 @@ section.home .container .button {
 }
 /* End Reviews */
 
-/* Start Content */
-
-/* End Content */
+/* Start Contact */
+.contact .content {
+    padding-top: 80px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.contact .content .map  {
+    height: 100%;
+    width: 100%;
+}
+/* End Contact */
