@@ -116,6 +116,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
     width: 100%;
@@ -471,7 +472,7 @@ section.home .container .button {
 /* Start Blogs */
 
 .blogs {
-    padding-bottom: var(--main-padding-bottom);
+    padding-bottom: 50px;
 }
 .blogs .container .box-container {
     padding-top: 30px;
@@ -516,13 +517,13 @@ section.home .container .button {
     color: var(--main-color);
 }
 .blogs .container .box-container .box .image .links a svg {
-color: var(--main-color);
-font-size: 1.7rem;
-padding-right: 5px ;
+   color: var(--main-color);
+   font-size: 1.7rem;
+   padding-right: 5px ;
 }
 
 .blogs .container .box-container .box .content {
-    text-align: center;
+   text-align: center;
 }
 .blogs .container .box-container .box .content h1 {
     color: white;
@@ -533,4 +534,30 @@ padding-right: 5px ;
     font-size: 1.5rem;
     line-height: 1.8;
 }
-/* End Blogs *
+/* End Blogs */
+
+/* Start Footer */
+section.footer  {
+    background-image: linear-gradient( transparent , black );
+}
+section.footer .container .links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   padding: 30px 0 40px;
+}
+
+  section.footer .copyright {
+   
+    padding-bottom: 40px;
+    text-align: center;
+    color: var(--second-color);
+    font-size: 2rem;
+    letter-spacing: -1;
+    margin: 0;
+  }
+  section.footer .copyright span {
+    color: var(--main-color);
+  }
+/* End Footer */
