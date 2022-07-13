@@ -1,5 +1,3 @@
-
-
 function show() {
  
     const links = document.querySelector("#links") ;

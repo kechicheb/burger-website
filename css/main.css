@@ -110,6 +110,8 @@ body {
 }
 /* Start Header */
  
+
+
  header {
     background-color: #000;
     padding-top: 20px;
@@ -163,60 +165,7 @@ body {
     flex: 1;
     align-items: center;
  }
- @media (max-width:991px) {
-    header .container {
-        justify-content: flex-end;
-        gap: 15px;
-    }
-    header .container .logo {
-        padding-left: 15px;
-        left: 0;
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-}
-header .container #shopping {
-    padding-right: 15px;
-}
-    header .container .links {
-       background-color: #000;
-       width: 100%;
-       padding: 15px;
-       position:absolute;
-       top: calc(100% + 20px);
-       left: 0;
-       flex-direction: column;
-       gap: 20px;
-       align-items: flex-start;
-       transition:transform 0.5s;
-       -webkit-transition:transform 0.5s;
-       -moz-transition:transform 0.5s;
-       -ms-transition:transform 0.5s;
-       -o-transition:transform 0.5s;
-       transform: translateX(-150%);
-       -webkit-transform: translateX(-150%);
-       -moz-transform: translateX(-150%);
-       -ms-transform: translateX(-150%);
-       -o-transform: translateX(-150%);
-}
-    header .container #links.active {
-       transform: translateX(0);
-       -webkit-transform: translateX(0);
-       -moz-transform: translateX(0);
-       -ms-transform: translateX(0);
-       -o-transform: translateX(0);
-} 
-    header .container .links  .left ,
-     header .container .links .right {
-      flex-direction: column;
-      
-    }
-    header .container #menu-btn {
-        display: block;
-     }
- }
+
  header .container .links .left ,
  header .container .links .right {
     display: flex;
@@ -247,7 +196,83 @@ header .container #shopping {
   header .container .links a:hover::after {
    opacity: 1;
   }
+
+  
+
+  /* NavBar responsive on mobile screens */
+  @media (max-width:991px) {
+    header .container {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    header .container .logo {
+        padding-left: 15px;
+        left: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    header .container .logo img {
+    max-width: 13rem;
+    }
+
+    header .container #shopping {
+    padding-right: 15px;
+    }
+
+    header .container .links {
+       background-color: #000;
+       width: 100%;
+       padding: 15px;
+       position:absolute;
+       top: calc(100% + 20px);
+       left: 0;
+       flex-direction: column;
+       gap: 20px;
+       align-items: flex-start;
+       transition:transform 0.5s;
+       -webkit-transition:transform 0.5s;
+       -moz-transition:transform 0.5s;
+       -ms-transition:transform 0.5s;
+       -o-transition:transform 0.5s;
+       transform: translateX(-150%);
+       -webkit-transform: translateX(-150%);
+       -moz-transform: translateX(-150%);
+       -ms-transform: translateX(-150%);
+       -o-transform: translateX(-150%);
+    }
+    header .container #links.active {
+       transform: translateX(0);
+       -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+       -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+    } 
+    header .container .links  .left ,
+    header .container .links .right {
+      flex-direction: column;
+      
+    }
+    header .container #menu-btn {
+        display: block;
+    }
+     header .container #search-btn,
+     header .container #shopping,
+     header .container #menu-btn{
+        font-size: 20px;
+    }
+     header .container .links a {
+        font-size: 1.6rem;
+    }
+ }
+
+
 /* End Header */
+
 
 /* Start Landing */
 section.home {
